@@ -25,6 +25,7 @@ address {
     justify-content: space-evenly;
     color: aliceblue;
 
+
 }
 
 .logo {
@@ -32,7 +33,24 @@ address {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+
 }
+
+.logo:hover p {
+    color: #F26522 ;
+
+
+    ;
+}
+
+.logo img:nth-child(2),
+.logo:hover img:nth-child(1) {
+    display: none;
+}
+.logo:hover img:nth-child(2) {
+    display: block;
+}
+
 
 .name {
     display: flex;
@@ -45,19 +63,26 @@ address {
     display: flex;
     flex-wrap: wrap;
     align-content: last baseline;
+    justify-content: space-between;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    /*margin: auto;*/
     align-items: center;
-    max-width: 30%;
+    min-width: 30%;
 }
 
 .copyrights {
-    margin-left: 30%;
+    display: block;
+    margin: auto;
+    width: 50%;
+   /* border: 1px solid #a24141; */
+   text-align: center;
     padding-top: 5%;
+    /* margin-left: 30%; */
+    /* padding-top: 5%; */
 }
 
 p {
@@ -65,5 +90,7 @@ p {
 }
 
 body {
-    background-image: url(/IMG/background\ 1.png);
+    width: 100%;
+    height: 100vh;
+    background: url(/IMG/background\ 1.png) center/cover;
 }
