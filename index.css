@@ -5,7 +5,6 @@
 }
 
 .container {
-    border: 1px solid black;
     max-width: 80%;
     margin: auto;
 
@@ -16,6 +15,7 @@ header {
     justify-content: space-between;
     min-height: 100px;
     border: 1px solid #2e2828;
+    align-items: center;
 }
 
 address {
@@ -34,17 +34,32 @@ address a {
 
 .logo {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    gap: 10px;
+    height: 90%;
 
+
+}
+
+.logo div p:last-child {
+    font-size: 14px;
+
+}
+
+.logo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.logo div div {
+    bottom: 0;
+    position: absolute;
 }
 
 .logo:hover p {
     color: #F26522;
-
-
-    ;
 }
 
 .logo img:nth-child(2),
@@ -56,16 +71,8 @@ address a {
     display: block;
 }
 
-address:hover a {
+address a:hover {
     color: #F26522;
-}
-
-
-.name {
-    display: flex;
-    flex-direction: column;
-    align-items: auto;
-    justify-content: space-evenly;
 }
 
 .galary {
@@ -73,25 +80,6 @@ address:hover a {
     flex-wrap: wrap;
     align-content: last baseline;
     justify-content: space-between;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    /*margin: auto;*/
-    align-items: center;
-    min-width: 30%;
-}
-
-.copyrights {
-    display: block;
-    margin: auto;
-    width: 50%;
-    /* border: 1px solid #a24141; */
-    text-align: center;
-    padding-top: 5%;
-    /* margin-left: 30%; */
-    /* padding-top: 5%; */
 }
 
 p {
@@ -104,54 +92,85 @@ body {
     background: url(/IMG/background\ 1.png) center/cover;
 }
 
-.price {
-    background-color: #F26522;
-    color: aliceblue;
-    width: 100%;
-    max-height: 35%;
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
-    display: flex;
-    
-}
-
 .card-container {
     position: relative;
-}
-
-.card-container img {
-    /* position: absolute; */
-    z-index: 1;
-
-}
-.h4 { 
-    display: inline-block; 
-}
-/* .price h2 { */
-    display: inline;
-}
-/* .price h3 { */
-    display: inline;
-}
-.card:hover #name  {
-    color: #F26522 ;
-    
-}
-.icon {
-    background-color: inherit;
-    color: aliceblue;
-    border: 0vmin solid #000;
-}
-.price {
-    display: none;
-  
-}
-.card-container:hover .price {
-    display: block;
     display: flex;
-    justify-content: space-around;
+    min-width: 30%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 35px;
 }
-#name:hover {
-    color:#F26522 ;
+
+.card {
+    position: relative;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    position: relative;
+    width: 100%;
+}
+
+.price {
+    width: 100%;
+    padding: 12px;
+    background-color: #F26522;
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.right::after {
+    content: '⟩';
+    margin-left: 10px;
+}
+
+#name {
+    position: absolute;
+    bottom: -20%;
+    text-align: center;
+}
+
+.card-container:hover .price {
+    opacity: 1;
+}
+
+.card-container:hover #name {
+    color: #F26522;
+}
+
+#name:hover .price {
+    opacity: 1;
+}
+
+.price div div:last-child {
+    font-size: x-large;
+}
+
+.button .icon {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background-image: url(/IMG/Vector\ 1.svg );
+    background-size: cover;
+    background-color: #F26522;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.copyrights {
+    font-size: smaller;
+
 }
