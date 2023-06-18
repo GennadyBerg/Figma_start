@@ -16,6 +16,8 @@ header {
     min-height: 100px;
     border: 1px solid #2e2828;
     align-items: center;
+    max-width: 1030px;
+    margin: auto;
 }
 
 address {
@@ -80,11 +82,10 @@ address a:hover {
     flex-wrap: wrap;
     align-content: last baseline;
     justify-content: space-between;
+    max-width: 1030px;
+    margin: auto;
 }
 
-p {
-    color: rgb(223, 238, 238);
-}
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -100,7 +101,8 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 35px;
-}
+    
+    }
 
 .card {
     position: relative;
@@ -174,4 +176,16 @@ footer {
 .copyrights {
     font-size: smaller;
 
+}
+@media screen and (max-width:600px)  {
+    .galary {
+        justify-content: center !important;
+            }
+            body{ 
+                background: aquamarine;
+            }
+        }
+
+p {
+    color: rgb(223, 238, 238);
 }
