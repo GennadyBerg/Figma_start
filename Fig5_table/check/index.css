@@ -1,0 +1,49 @@
+*{
+    bottom: 0;
+    margin: 0;
+   box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid #000;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.overlay-button {
+  position: relative;
+  z-index: 1;
+}
+
+/* Стили для отмеченного checkbox и radio */
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  background-color: #2ecc71;
+}
+
+/* Стили для кнопки */
+.overlay-button {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
