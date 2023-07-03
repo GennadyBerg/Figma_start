@@ -28,9 +28,10 @@
     gap: 5px;
     position: relative;
     background-image: url(/Hom_fig6/matt-thomason-YBLvEQ6npQo-unsplash.jpg);
-    background-size: concovertain;
+    background-size: cover;
     background-repeat: repeat;
     background-position: center;
+    background-attachment: fixed;
 
 }
 
