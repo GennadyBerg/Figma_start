@@ -187,7 +187,7 @@ button:hover {
     height: 580px;
     display: flex;
     position: relative;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     flex-direction: column;
     text-align: center;
 
@@ -209,7 +209,7 @@ button:hover {
     justify-content: center;
     position: relative;
     text-align: center;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .card {
@@ -217,10 +217,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     position: relative;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     height: 400px;
-    margin: auto;
-
+    justify-content: center;
 }
 
 .base {
@@ -231,7 +230,9 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: absolute;
+    top: 30px;
+    left: 100px;
 
 }
 
@@ -259,11 +260,22 @@ button:hover {
 }
 
 .item {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     text-align: center;
     display: flex;
     flex-direction: column;
-    
-    
+    width: 100%;
+    justify-content: center;
 
+
+
+}
+
+.item>p {
+    color: rgba(17, 18, 19, 0.55);
+    display: inline-block;
+    width: 100%;
+}
+#title {
+    margin-top: 150px;
 }
