@@ -423,8 +423,6 @@ button:hover {
     padding: 10px 0 10px 0;
 
 }
-
-
 .form-container {
     height: 520px;
     margin: auto;
@@ -469,6 +467,9 @@ input[type="submit"] {
     height: 55px;
     font-size: large;
     padding-top: 10px;
+}
+fieldset {
+    border: none;
 }
 
 /* FOOTER //////////////////////// */
