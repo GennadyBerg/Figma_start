@@ -38,14 +38,19 @@
 @media screen and (max-width: 720px) {
   .menu {
     display: none;
-    flex-direction: column;
+    list-style: none;
     position: absolute;
     top: 100%;
-    right: 0;
-    width: 100%;
-    background-color: #a57676;
+    left: 0;
+    background-color: #fff;
     padding: 10px;
   }
+  
+  .navigation:hover .menu,
+  .menu:hover {
+    display: flex;
+  }
+  
 
   .toggle-nav:checked ~ .navigation .menu {
     display: flex;
@@ -53,5 +58,7 @@
 
   .hamburger {
     display: block;
+    cursor: pointer;
   }
+  
 }
