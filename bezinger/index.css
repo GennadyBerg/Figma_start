@@ -19,7 +19,7 @@
 }
 
 .wrapper {
-    background-image: url(/bezinger/Base.png);
+    background-image: url(/Figma_start/bezinger/Base.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -358,7 +358,5 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    
-
+ 
 }
