@@ -41,7 +41,7 @@
     list-style: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     background-color: #fff;
     padding: 10px;
   }
@@ -49,6 +49,10 @@
   .navigation:hover .menu,
   .menu:hover {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* padding-bottom: 30px; */
   }
   
 
@@ -59,6 +63,10 @@
   .hamburger {
     display: block;
     cursor: pointer;
+    
+  }
+  .menu>li {
+    padding-bottom: 20px;
   }
   
 }
