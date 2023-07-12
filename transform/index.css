@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    border: 3px solid #000;
+    margin: 250px;
+}
+.child {
+    height: 100%;
+    background-image: url(/transform/smk-calendar-1640x790-2-1536x740.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+
+}
+.container:hover .child {
+    transition: 0.6s;
+    /* transform: translate(100px, -100px);
+    transform: scaleX(1.5) scaleY(1.5);
+    transform: scale(1.5);
+    transform: rotate(-45deg); */
+    /* transform-origin: 600px 600px; */
+    /* transform: skewX(-15deg);
+    transform: skewY(10deg);
+    transform: skew(-10deg, -20deg); */
+    transform: rotate(45deg) scaleX(1.5) skewX(-15deg) scaleY(1.5)
+    translateX(330px)  ;
+
+    
+  
+
+
+}
