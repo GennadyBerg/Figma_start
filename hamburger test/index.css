@@ -7,6 +7,7 @@
 
 .navigation {
   display: flex;
+  justify-content: end;
   align-items: center;
   position: relative; /* Добавьте этот стиль */
 }
@@ -15,6 +16,7 @@
 .hamburger {
   display: none;
   cursor: pointer;
+
 }
 
 .line {
@@ -26,24 +28,35 @@
 }
 
 .menu {
-  display: flex;
+  display: flex ;
   list-style: none;
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  gap: 30px;
 }
 
 /* li {
   display: inline-block;
 
 } */
-
-@media screen and (max-width: 720px) {
+.navigation>input {
+  position: absolute;
+  opacity: 0;
+}
+@media screen and (max-width: 640px) {
   .menu {
     display: none;
     list-style: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     background-color: #fff;
     padding: 10px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: right;
+    
   }
   
   .navigation:hover .menu,
@@ -52,7 +65,7 @@
   }
   
 
-  .toggle-nav:checked ~ .navigation .menu {
+  #toggle-nav:checked ~ .navigation .menu {
     display: flex;
   }
 
