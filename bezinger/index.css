@@ -19,7 +19,7 @@
 }
 
 .wrapper {
-    background-image: url(/Figma_start/bezinger/Base.png);
+    background-image: url(/bezinger/Base.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@ header {
 
 }
 
-nav {
+.navigation {
     width: 50%;
     margin-left: -6%;
 }
@@ -73,6 +73,91 @@ nav>ul>li>a:hover::after {
     height: 4px;
     background-color: rgb(0, 204, 255);
 }
+
+/* ////////////burger///////////// */
+.navigation {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative; /* Добавьте этот стиль */
+  }
+  
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    transition: 0.5s;
+  
+  }
+  /* .hamburger:hover span {
+    transform: rotate(45deg);
+  } */
+  
+  .line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+  
+  .menu {
+    display: flex ;
+    list-style: none;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    gap: 30px;
+  }
+  
+  /* li {
+    display: inline-block;
+  
+  } */
+  .navigation>input {
+    position: absolute;
+    opacity: 0;
+  }
+  @media screen and (max-width: 640px) {
+    .menu {
+      display: none;
+      list-style: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #fff;
+      padding: 10px;
+      flex-direction: column;
+      gap: 20px;
+      text-align: right;
+      
+    }
+    
+    .navigation:hover .menu,
+    .menu:hover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      /* padding-bottom: 30px; */
+    }
+    
+  
+    #toggle-nav:checked ~ .navigation .menu {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      
+    }
+    .menu>li {
+      padding-bottom: 20px;
+    }
+    
+  }
+  
 
 /* ///////////////////////////// */
 .logo {

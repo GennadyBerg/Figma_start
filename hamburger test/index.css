@@ -16,8 +16,12 @@
 .hamburger {
   display: none;
   cursor: pointer;
+  transition: 0.5s;
 
 }
+/* .hamburger:hover span {
+  transform: rotate(45deg);
+} */
 
 .line {
   display: block;
