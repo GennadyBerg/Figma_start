@@ -20,7 +20,7 @@
     height: 18%;
     bottom: 0;
     position: absolute;
-    animation: land 6s infinite linear
+    animation: land 4s infinite linear
 }
 
 .clowd {
@@ -63,10 +63,12 @@
     background-image: url(/Anima_strites/sprites.png);
     position: absolute;
     bottom: 106px;
-    left: -120px;
+    left: -100px;
     z-index: 1;
 
-    animation: manfr 1s infinite steps(6), manX 5s infinite linear;
+    animation: manfr 1s infinite steps(6), 
+                manX1 4s infinite linear,
+                manX2 2s 2s infinite linear;
 }
 
 @keyframes manfr {
@@ -78,8 +80,54 @@
 
 }
 
-@keyframes manX {
+@keyframes manX1 {
+    100% {
+        left: 60%;
+    }
+}
+@keyframes manX2 {
+    /* 0% {
+        left: 60%;
+    } */
     100% {
         left: 100%;
+    }
+}
+
+.panther {
+    width: calc(989px / 2);
+    height: calc(963px / 4);
+    background-image: url(/Anima_strites/Image20230720195857.png);
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    animation: pantherx 0.5s infinite steps(2),
+                panthery 1s infinite steps(4),
+                pant-run 5.5s .5s infinite linear;
+    
+
+}
+
+@keyframes pantherx {
+    0% {
+        background-position-x: 0;
+    } 
+    
+    100% {
+        background-position-x: 989px;
+    }
+    
+}
+@keyframes panthery {
+    0% {
+        background-position-y:0 ;
+    }
+    100% {
+        background-position-y:-969px ;
+    }
+}
+@keyframes pant-run {
+    100% {
+        left: 150%;
     }
 }
