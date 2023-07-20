@@ -102,7 +102,8 @@ body {
     /* transition-delay:0s, 2s, 5s ; */
     /* opacity: 0; */
     transition-timing-function:cubic-bezier(.35,.96,1,-0.83);
-
+    transition: all 10s 2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+/* ////////////property duration delay cubic///////////// */
 }
 
 .avers {
