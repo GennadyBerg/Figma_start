@@ -31,13 +31,11 @@
     top: 50px;
     animation: clowd 10s infinite linear;
     transform: translateX(1000%);
-
 }
 
 .second {
     top: 150px;
     animation: clowd 7s infinite linear;
-
 }
 
 @keyframes clowd {
@@ -62,8 +60,7 @@
     left: -100px;
     z-index: 1;
     animation: manfr 1s infinite steps(6),
-                manX1 6s infinite cubic-bezier(.73,.41,.24,.96);
-                /* manX2 2s 2s infinite linear; */
+        manX1 6s infinite cubic-bezier(.73, .41, .24, .96);
 }
 
 @keyframes manfr {
@@ -71,19 +68,13 @@
         background-position: -960px 0;
     }
 }
+
 /* ////////sync &&&&&&&&&&&&&&&&&///////////////////// */
 @keyframes manX1 {
     100% {
         left: 150%;
     }
 }
-
-/* @keyframes manX2 {
-
-    100% {
-        left: 100%;
-    }
-} */
 
 .panther {
     width: calc(989px / 2);
@@ -94,9 +85,7 @@
     left: -100%;
     animation: pantherx 0.5s infinite steps(2),
         panthery 1s infinite steps(4),
-        pant-run 6s  infinite linear;
-
-
+        pant-run 6s infinite linear;
 }
 
 @keyframes pantherx {
@@ -107,7 +96,6 @@
     100% {
         background-position-x: 989px;
     }
-
 }
 
 @keyframes panthery {
